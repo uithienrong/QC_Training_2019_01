@@ -1,0 +1,124 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset163 Calibri;}{\f2\fnil\fcharset238 Calibri;}}
+{\*\generator Riched20 10.0.16299}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs28\lang9 I/ V\'ed d\f1\lang1066\u7909? code:\b0\fs22\par
+\b\fs24 1) L\u7879?nh if, if...else, if...elif...else trong Python: \b0\fs22\par
+x = int(input("Nhap mot so: "))\par
+if x < 0:\par
+ x = 0\par
+ print('So am')\par
+elif x == 0:\par
+ print('So 0')\par
+elif x == 1:\par
+ print('So 1')\par
+else:\par
+ print('So duong')\par
+\b\fs24\par
+2) V\f0\lang1033\'f2ng l\f1\lang1066\u7863?p for trong Python:\par
+\b0\fs22 qua = ['chuoi', 'tao',  'xoai']\par
+for index in range(len(qua)):\par
+   print 'Ban co thich an :', qua[index]\par
+print "Good bye!"\par
+\b\fs24\par
+\f0\lang1033 3) V\'f2ng l\f1\lang1066\u7863?p while trong Python\f0\lang1033 :\par
+\b0\fs22 count = 0\par
+while (count < 8):\par
+   print 'So thu ba cua ban la:', count\par
+   count = count + 1\par
+print "Good bye!"\par
+\par
+\b\fs24 4) \f1\lang1066 List trong Python\f0\lang1033 :\b0\fs22\par
+list1 = ['nga', 'thuy', 1997, 1994];\par
+list2 = [1, 2, 3, 4, 5, 6, 7 ];\par
+print "list1[0]: ", list1[0]\par
+print "list2[1:5]: ", list2[1:5]\f1\lang1066\par
+\b\fs32 II/ T\f0\lang1033\'ecm hi\f1\lang1066\u7875?u v\u7873? class v\f0\lang1033\'e0 function trong Python:\fs24\par
+1) Class:\par
+\b0\fs22 - Class l\'e0 m\f1\lang1066\u7897?t nguy\f0\lang1033\'ean m\f1\lang1066\u7851?u (prototype) \f2\'f0\f1\u7875? t\u7841?o ra c\f0\lang1033\'e1c \f2\'f0\f1\lang1066\u7889?i t\f2\u432?\f1\u7907?ng (object/instance).\par
+\b\i\f0\lang1033 - Khai b\'e1o Class:\b0\i0\par
+class MyNewClass:\par
+     '''\f2\'d0\f0\'e2y l\'e0 docstring. M\f1\lang1066\u7897?t l\u7899?p m\u7899?i v\u7915?a \f2\'f0\u432?\f1\u7907?c khai b\f0\lang1033\'e1o.'''\i\par
+\i0      pass\par
+\b\i - Khai b\'e1o thu\f1\lang1066\u7897?\f0\lang1033 c t\'ednh trong Class:\b0\par
+\i0 class Person:\par
+    name = "V\f2\u361? Thanh T\f0\'e0i";\par
+    age = 22;\par
+    male = True\par
+\b\i - Khai b\'e1o ph\f2\u432?\u417?\f0 ng th\f1\lang1066\u7913?\f0\lang1033 c trong Class:\b0\par
+\i0 class Person:\par
+    # thu\f1\lang1066\u7897?c t\f0\lang1033\'ednh\par
+    name = "V\f2\u361? Thanh T\f0\'e0i";\par
+    age = 22;\par
+    male = True\par
+    # ph\f2\u432?\u417?ng th\f1\lang1066\u7913?c\par
+    def setName(self, name):\par
+        self.name = name\par
+   def getName(self):\par
+        return self.name\par
+    def setAge(self, age):\par
+        self.age = ag\f0\lang1033 e\f1\lang1066\par
+    def getAge(self):\par
+        return self.age\par
+    def setMale(self, male):\par
+        self.male = mal\f0\lang1033 e\f1\lang1066\par
+    def getMale(self):\i\par
+\i0         return self.male\f0\lang1033\par
+\i - T\f1\lang1066\u7841?o Th\u7911? t\u7909?c \i0\f2\'f0\f1\u7875? t\u7841?o m\u7897?t \f2\'f0\f1\u7889?i t\f2\u432?\f1\u7907?ng t\f2\u432?\u417?ng t\f1\u7921? nh\f2\u432? c\f0\lang1033\'e1ch ch\'fang ta g\f1\lang1066\u7885?i h\f0\lang1033\'e0m.\par
+\tab ob = MyClass()\par
+L\f1\lang1066\u7879?nh n\f0\lang1033\'e0y \f2\'f0\f0\'e3 t\f1\lang1066\u7841?o ra m\u7897?t \f2\'f0\f1\u7889?i t\f2\u432?\f1\u7907?ng m\u7899?i c\f0\lang1033\'f3 t\'ean l\'e0 ob.\f1\lang1066\par
+\b\fs24 2) Function:\b0\fs22\par
+- \i H\f0\lang1033\'e0m \i0 l\'e0 m\f1\lang1066\u7897?t kh\u7889?i code \f2\'f0\u432?\f1\u7907?c t\u7893? ch\u7913?c v\f0\lang1033\'e0 c\'f3 th\f1\lang1066\u7875? t\f0\lang1033\'e1i s\f1\lang1066\u7917? d\u7909?ng, \f2\'f0\f1\u7875? th\u7921?c hi\u7879?n m\u7897?t h\f0\lang1033\'e0nh \f2\'f0\f1\lang1066\u7897?ng n\f0\lang1033\'e0o \f2\'f0\f0\'f3.\b\par
+\i - M\f1\lang1066\u7897?\f0\lang1033 t s\f1\lang1066\u7889?\f0\lang1033  quy t\f1\lang1066\u7855?\f0\lang1033 c: \i0\f1\lang1066\par
+\b0\tab T\u7915? kh\f0\lang1033\'f3a def \f2\'f0\u432?\f1\lang1066\u7907?c s\u7917? d\u7909?ng \f2\'f0\f1\u7875? b\u7855?t \f2\'f0\f1\u7847?u ph\u7847?n \f2\'f0\f1\u7883?nh ngh\f2\u297?a h\f0\lang1033\'e0m.  Def x\'e1c \f2\'f0\f1\lang1066\u7883?nh ph\u7847?n b\u7855?t \f2\'f0\f1\u7847?u c\u7911?a kh\u7889?i h\f0\lang1033\'e0m.\par
+\tab def \f2\'f0\u432?\f1\lang1066\u7907?c theo sau b\u7903?i ten_ham \f2\'f0\u432?\f1\u7907?c theo sau b\u7903?i c\f0\lang1033\'e1c d\f1\lang1066\u7845?u ngo\u7863?c \f2\'f0\u417?n ().\par
+\tab C\f0\lang1033\'e1c tham s\f1\lang1066\u7889? \f2\'f0\u432?\f1\u7907?c truy\u7873?n v\f0\lang1033\'e0o b\'ean trong c\'e1c d\f1\lang1066\u7845?u ngo\u7863?c \f2\'f0\u417?n. \f1\u7902? cu\u7889?i l\f0\lang1033\'e0 d\f1\lang1066\u7845?u hai ch\u7845?m.\par
+\tab Tr\f2\u432?\f1\u7899?c khi vi\u7871?t m\u7897?t code, m\u7897?t \f2\'f0\f1\u7897? th\u7909?t d\f0\lang1033\'f2ng \f2\'f0\u432?\f1\lang1066\u7907?c cung c\u7845?p tr\f2\u432?\f1\u7899?c m\u7895?i l\u7879?nh. \f2\'d0\f1\u7897? th\u7909?t d\f0\lang1033\'f2ng n\'e0y n\'ean gi\f1\lang1066\u7889?ng nhau cho\f0\lang1033  \f1\lang1066 t\u7845?t c\u7843? c\f0\lang1033\'e1c l\f1\lang1066\u7879?nh b\f0\lang1033\'ean trong h\'e0m \f2\'f0\f0\'f3.\par
+\tab L\f1\lang1066\u7879?nh \f2\'f0\f1\u7847?u ti\f0\lang1033\'ean c\f1\lang1066\u7911?a h\f0\lang1033\'e0m l\'e0 t\'f9y \'fd, v\'e0 n\'f3 l\'e0 Documentation String c\f1\lang1066\u7911?a m\u7897?t h\f0\lang1033\'e0m \f2\'f0\f0\'f3.\par
+\tab Sau \f2\'f0\f0\'f3 l\'e0 l\f1\lang1066\u7879?nh \f2\'f0\f1\u7875? \f2\'f0\u432?\f1\u7907?c th\u7921?c thi.\par
+\b\i\f0\lang1033 - H\'e0m Python s\f1\lang1066\u7869? bao g\u7891?m c\f0\lang1033\'e1c th\'e0nh ph\f1\lang1066\u7847?n sau:\b0\par
+\i0\f0\lang1033\tab 1.\f1\lang1066 T\u7915? kh\f0\lang1033\'f3a def: \f2\'d0\f0\'e1nh d\'e1u s\f1\lang1066\u7921? b\u7855?t \f2\'f0\f1\u7847?u c\u7911?a ti\f0\lang1033\'eau \f2\'f0\f1\lang1066\u7873? h\f0\lang1033\'e0m.\par
+\tab 2.ten_ham: L\'e0 \f2\'f0\f1\lang1066\u7883?nh danh duy nh\u7845?t d\f0\lang1033\'e0nh cho h\'e0m. Vi\f1\lang1066\u7879?c \f2\'f0\f1\u7863?t t\f0\lang1033\'ean h\'e0m ph\f1\lang1066\u7843?i tu\f0\lang1033\'e2n th\f1\lang1066\u7911? theo quy t\u7855?c vi\u7871?t t\f0\lang1033\'ean v\'e0 \f2\'f0\f1\lang1066\u7883?nh danh trong Python.\par
+\f0\lang1033\tab 3.\f1\lang1066 C\f0\lang1033\'e1c tham s\f1\lang1066\u7889?/\f2\'f0\f1\u7889?i s\u7889?: Ch\f0\lang1033\'fang ta truy\f1\lang1066\u7873?n gi\f0\lang1033\'e1 tr\f1\lang1066\u7883? cho h\f0\lang1033\'e0m th\'f4ng qua c\'e1c tham s\f1\lang1066\u7889? n\f0\lang1033\'e0y. Ch\'fang l\'e0 t\'f9y ch\f1\lang1066\u7885?n.\par
+\f0\lang1033\tab 4.\f1\lang1066 D\u7845?u hai ch\u7845?m (:): \f2\'d0\f0\lang1033\'e1nh d\f1\lang1066\u7845?u s\u7921? k\u7871?t th\f0\lang1033\'fac c\f1\lang1066\u7911?a ti\f0\lang1033\'eau \f2\'f0\f1\lang1066\u7873? h\f0\lang1033\'e0m.\par
+\tab 5.docstring: Chu\f1\lang1066\u7895?i v\f2\'e3n b\f1\u7843?n t\f0\lang1033\'f9y ch\f1\lang1066\u7885?n \f2\'f0\f1\u7875? m\f0\lang1033\'f4 t\f1\lang1066\u7843? ch\u7913?c n\f2\'e3ng c\f1\u7911?a h\f0\lang1033\'e0m.\par
+\tab 6.C\'e1c c\'e2u l\f1\lang1066\u7879?nh: M\u7897?t ho\u7863?c nhi\u7873?u l\u7879?nh Python h\u7907?p l\u7879? t\u7841?o th\f0\lang1033\'e0nh kh\f1\lang1066\u7889?i l\u7879?nh. C\f0\lang1033\'e1c l\f1\lang1066\u7879?nh n\f0\lang1033\'e0y ph\f1\lang1066\u7843?i c\f0\lang1033\'f3 c\'f9ng m\f1\lang1066\u7897?t m\u7913?c th\u7909?t \f2\'f0\f1\u7847?u d\f0\lang1033\'f2ng (th\f2\u432?\f1\lang1066\u7901?ng l\f0\lang1033\'e0 4 kho\f1\lang1066\u7843?ng tr\u7855?ng).\par
+
+\pard\li720\sa200\sl276\slmult1\tx90\f0\lang1033 7.\f1\lang1066 L\u7879?nh return: L\u7879?nh n\f0\lang1033\'e0y l\'e0 t\'f9y ch\f1\lang1066\u7885?n, d\f0\lang1033\'f9ng khi c\f1\lang1066\u7847?n tr\u7843? v\u7873? gi\f0\lang1033\'e1 tr\f1\lang1066\u7883? t\u7915? h\f0\lang1033\'e0m.\par
+
+\pard\sa200\sl276\slmult1\f1\lang1066\par
+\i\f0\lang1033 - \b\f1\lang1066 C\f0\lang1033\'fa ph\'e1p:\b0\i0\par
+def ten_ham( cac_tham_so ):\par
+   "function_docstring"\par
+    function_suite\par
+   return [bieu_thuc]\par
+\b\i - V\'ed d\f1\lang1066\u7909?\f0\lang1033 :\b0\i0\par
+def chao(ten):\par
+ """H\'e0m n\'e0y d\'f9ng \f2\'f0\f1\lang1066\u7875?\par
+ ch\f0\lang1033\'e0o m\f1\lang1066\u7897?t ng\f2\u432?\f1\u7901?i \f2\'f0\u432?\f1\u7907?c truy\u7873?n\par
+    v\f0\lang1033\'e0o nh\f2\u432? m\f1\lang1066\u7897?t tham s\u7889?""" \par
+    print("Xin ch\f0\lang1033\'e0o, " + ten + "!")\par
+- \b L\f1\lang1066\u7879?nh return trong h\f0\lang1033\'e0m Python:\b0\par
+L\f1\lang1066\u7879?nh return th\f2\u432?\f1\u7901?ng \f2\'f0\u432?\f1\u7907?c d\f0\lang1033\'f9ng \f2\'f0\f1\lang1066\u7875? tho\f0\lang1033\'e1t h\'e0m v\'e0 tr\f1\lang1066\u7903? v\u7873? n\f2\u417?i m\f0\lang1033\'e0 t\f1\lang1066\u7841?i \f2\'f0\f0\lang1033\'f3 h\'e0m \f2\'f0\u432?\f1\lang1066\u7907?c g\u7885?i.\par
+\f0\lang1033\tab\f1\lang1066 C\f0\lang1033\'fa ph\'e1p c\f1\lang1066\u7911?a l\u7879?nh return:\f0\lang1033        \f1\lang1066 return [danh_sach_bieu_thuc]\par
+L\u7879?nh n\f0\lang1033\'e0y c\'f3 th\f1\lang1066\u7875? ch\u7913?a bi\u7875?u th\u7913?c \f2\'f0\u432?\f1\u7907?c t\f0\lang1033\'ednh to\'e1n v\'e0 gi\'e1 tr\f1\lang1066\u7883? tr\u7843? v\u7873?. N\u7871?u kh\f0\lang1033\'f4ng c\'f3 bi\f1\lang1066\u7875?u th\u7913?c n\f0\lang1033\'e0o trong c\'e2u l\f1\lang1066\u7879?nh ho\u7863?c kh\f0\lang1033\'f4ng c\'f3 l\f1\lang1066\u7879?nh return trong h\f0\lang1033\'e0m th\'ec h\'e0m s\f1\lang1066\u7869? tr\u7843? v\u7873? None.\i\par
+\f0\lang1033\tab\f1\lang1066 V\f0\lang1033\'ed d\f1\lang1066\u7909? v\u7873? l\u7879?nh return\i0 : \par
+\f0\lang1033\tab\tab\f1\lang1066 def gia_tri_tuyet_doi(so):\par
+   \f0\lang1033\tab\tab\f1\lang1066  """H\f0\lang1033\'e0m n\'e0y tr\f1\lang1066\u7843? v\u7873? gi\f0\lang1033\'e1 tr\f1\lang1066\u7883? tuy\u7879?t \f2\'f0\f1\u7889?i\par
+    \f0\lang1033\tab\tab\tab\f1\lang1066 c\u7911?a m\u7897?t s\u7889? nh\u7853?p v\f0\lang1033\'e0o"""\par
+    \tab\tab if so >= 0: \par
+    \tab\tab return so \par
+   \tab\tab  else: \par
+        \tab\tab\tab return -so\par
+# \f2\'d0\f1\lang1066\u7847?u ra: 5\par
+print(gia_tri_tuyet_doi(5))\par
+# \f2\'d0\f1\u7847?u ra: 8\par
+print(gia_tri_tuyet_doi(-8))\par
+# \f2\'d0\f1\u7847?u ra: Gi\f0\lang1033\'e1 tr\f1\lang1066\u7883? tuy\u7879?t \f2\'f0\f1\u7889?i c\u7911?a s\u7889? nh\u7853?p v\f0\lang1033\'e0o\par
+num=int(input("Nh\f1\lang1066\u7853?p s\u7889? c\u7847?n l\u7845?y gi\f0\lang1033\'e1 tr\f1\lang1066\u7883? tuy\u7879?t \f2\'f0\f1\u7889?i: "))\par
+print (gia_tri_tuyet_doi(num))\f0\lang1033\par
+
+\pard\li720\sa200\sl276\slmult1\tx90\par
+\lang9\par
+
+\pard\fi720\sa200\sl276\slmult1\par
+}
+ 

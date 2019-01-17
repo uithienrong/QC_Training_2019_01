@@ -1,0 +1,79 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil\fcharset238 Times New Roman;}{\f2\fnil\fcharset163 Times New Roman;}{\f3\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.16299}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs30\lang9 //1. \f1\'d0\f0 i\f2\lang1066\u7873?\f0\lang9 u ki\f2\lang1066\u7879?\f0\lang9 n\b0\fs22\par
+import math\par
+print("nhap a:")\par
+a=input()\par
+print("nhap b:")\par
+b=input()\par
+print("nhap c:")\par
+c=input()\par
+print("hien:",a,b,c)\par
+if a == 0:\par
+    x = -c/b\par
+    print("nghiem x:",x)\par
+if a != 0:\par
+\tab D = b*b-4*a*c\par
+\tab if D<0:\par
+\tab\tab print("Vo nghiem")\par
+\tab elif D==0:\par
+\tab\tab x=-b/(2*a)\par
+\tab\tab print("nghiem",x)\par
+\tab else:\par
+\tab\tab x1= (-b + math.sqrt(D))/(2*a)\par
+\tab\tab x2= (-b - math.sqrt (D))/(2*a)\par
+\tab\tab print("x1",x1)\par
+\tab\tab print("x2",x2)\par
+\b\fs30 //2. List\fs22\par
+\b0 A = [1,2,3,4]\par
+tich =1\par
+for a in A:\par
+\tab tich=tich*a\par
+\tab print("tich",tich)\par
+A[2] = "hoa"\par
+print "A", A[0:4]\par
+del A[1]\par
+print "A",A[0:3]\par
+--------------------------------------------------------*---------------------------------------------------------\par
+\fs30 //\b T\'ccM HI\f2\lang1066\u7874?\f0\lang9 U V\f2\lang1066\u7872?\f0\lang9  CLASS\par
+\b0\f1\fs22\'d0\f2\lang1066\u7875? \f1\'f0\f2\u7883?nh ngh\f1\u297?a m\f2\u7897?t l\u7899?p b\u7841?n s\u7917? d\u7909?ng t\u7915? kh\f0\lang1033\'f3a class, ti\f2\lang1066\u7871?p sau \f1\'f0\f0\lang1033\'f3 l\'e0 t\'ean c\f2\lang1066\u7911?a l\u7899?p v\f0\lang1033\'e0 d\f2\lang1066\u7845?u hai ch\u7845?m ( : )\f0\lang1033 .\par
+Thu\f2\lang1066\u7897?c t\f0\lang1033\'ednh l\'e0 m\f2\lang1066\u7897?t th\f0\lang1033\'e0nh vi\'ean th\'e0nh vi\'ean c\f2\lang1066\u7911?a l\u7899?p\f0\lang1033 .\par
+    \b Ph\f1\u432?\u417?ng th\f2\lang1066\u7913?c (Method):\b0\par
+        Ph\f1\u432?\u417?ng th\f2\u7913?c c\u7911?a class n\f0\lang1033\'f3 t\f1\u432?\u417?ng t\f2\lang1066\u7921? nh\f1\u432? m\f2\u7897?t h\f0\lang1033\'e0m th\'f4ng th\f1\u432?\f2\lang1066\u7901?ng, nh\f1\u432?ng n\f0\lang1033\'f3 l\'e0 m\f2\lang1066\u7897?t h\f0\lang1033\'e0m c\f2\lang1066\u7911?a \f0\lang1033\tab\f2\lang1066 class, \f1\'f0\f2\u7875? s\u7917? d\u7909?ng n\f0\lang1033\'f3 b\f2\lang1066\u7841?n c\u7847?n ph\u7843?i g\u7885?i th\f0\lang1033\'f4ng qua \f1\'f0\f2\lang1066\u7889?i t\f1\u432?\f2\u7907?ng.\par
+        Tham s\u7889? \f1\'f0\f2\u7847?u ti\f0\lang1033\'ean c\f2\lang1066\u7911?a ph\f1\u432?\u417?ng th\f2\u7913?c lu\f0\lang1033\'f4n l\'e0 self (M\f2\lang1066\u7897?t t\u7915? kh\f0\lang1033\'f3a \'e1m ch\f2\lang1066\u7881? ch\f0\lang1033\'ednh class \f1\'f0\f0\'f3).\par
+    \b Ph\f1\u432?\u417?ng th\f2\lang1066\u7913?c kh\u7903?i t\u7841?o (Constructor):\b0\par
+        Ph\f1\u432?\u417?ng th\f2\u7913?c kh\u7903?i t\u7841?o (Constructor) l\f0\lang1033\'e0 m\f2\lang1066\u7897?t ph\f1\u432?\u417?ng th\f2\u7913?c \f1\'f0\f2\u7863?c bi\u7879?t c\u7911?a l\u7899?p (class), n\f0\lang1033\'f3 lu\'f4n c\'f3 \tab t\'ean l\'e0 __init__\par
+        Tham s\f2\lang1066\u7889? \f1\'f0\f2\u7847?u ti\f0\lang1033\'ean c\f2\lang1066\u7911?a constructor lu\f0\lang1033\'f4n l\'e0 self (M\f2\lang1066\u7897?t t\u7915? kh\f0\lang1033\'f3a \'e1m ch\f2\lang1066\u7881? ch\f0\lang1033\'ednh class \f1\'f0\f0\'f3).\par
+        Constructor \f1\'f0\u432?\f2\lang1066\u7907?c s\u7917? d\u7909?ng \f1\'f0\f2\u7875? t\u7841?o ra m\u7897?t \f1\'f0\f2\u7889?i t\f1\u432?\f2\u7907?ng.\par
+        Constructor g\f0\lang1033\'e1n c\'e1c gi\'e1 tr\f2\lang1066\u7883? t\u7915? tham s\u7889? v\f0\lang1033\'e0o c\'e1c thu\f2\lang1066\u7897?c t\f0\lang1033\'ednh c\f2\lang1066\u7911?a \f1\'f0\f2\u7889?i t\f1\u432?\f2\u7907?ng s\u7869? \f1\'f0\u432?\f2\u7907?c t\u7841?o ra.\par
+        B\u7841?n ch\u7881? c\f0\lang1033\'f3 th\f2\lang1066\u7875? \f1\'f0\f2\u7883?nh ngh\f1\u297?a nhi\f2\u7873?u nh\u7845?t m\u7897?t ph\f1\u432?\u417?ng th\f2\u7913?c kh\u7903?i t\u7841?o (constructor) trong class.\par
+        N\u7871?u class kh\f0\lang1033\'f4ng \f1\'f0\u432?\f2\lang1066\u7907?c \f1\'f0\f2\u7883?nh ngh\f1\u297?a constructor, Python m\f2\u7863?c \f1\'f0\f2\u7883?nh coi r\u7857?ng n\f0\lang1033\'f3 th\f2\lang1066\u7915?a k\u7871?t t\u7915? \f0\lang1033\tab\f2\lang1066 constructor c\u7911?a l\u7899?p cha.\f0\lang9\par
+\fs30 //\b T\'ccM HI\f2\lang1066\u7874?\f0\lang9 U V\f2\lang1066\u7872?\f0\lang9  FUNCTION\par
+\b0 H\'e0m (function) l\'e0 m\f2\lang1066\u7897?t kh\u7889?i l\u7879?nh \f1\'f0\f2\u7863?c bi\u7879?t, n\f0\lang1033\'f3 \f1\'f0\u432?\f2\lang1066\u7907?c \f1\'f0\f2\u7863?t t\f0\lang1033\'ean, gi\'fap m\'e3 ch\f1\u432?\u417?ng tr\f0\'ecnh d\f2\lang1066\u7877? \f1\'f0\f2\u7885?c h\f1\u417?n, v\f0\lang1033\'e0 c\'f3 th\f2\lang1066\u7875? g\u7885?i \f1\'f0\f2\u7875? s\u7917? d\u7909?ng \u7903? c\f0\lang1033\'e1c n\f1\u417?i kh\f0\'e1c nhau trong ch\f1\u432?\u417?ng tr\f0\'ecnh. H\'e0m ch\'ednh l\'e0 kh\f2\lang1066\u7889?i l\u7879?nh c\f0\lang1033\'f3 th\f2\lang1066\u7875? t\f0\lang1033\'e1i s\f2\lang1066\u7917? d\u7909?ng\f0\lang1033 .\b\f2\lang1066\par
+\f0\lang1033\tab\fs22 C\'da PH\'c1P\par
+\tab  def functionName( parameters ):\par
+   \tab "M\'f4 t\f2\lang1066\u7843? ng\u7855?n v\u7873? h\f0\lang1033\'e0m"\par
+  \tab  codes ...\par
+\tab  return [expression]\par
+\tab\fs30 H\'e0m v\f2\lang1066\u7899?i tham s\u7889? b\u7855?t bu\u7897?c \par
+\f0\lang1033\tab\b0\fs22 Khi \f1\'f0\f2\lang1066\u7883?\f0\lang1033 nh ngh\f1\u297?\f0 a m\f2\lang1066\u7897?\f0\lang1033 t h\'e0m, ta c\'f3 c\'e1c tham s\f2\lang1066\u7889?\f0\lang1033 . Quy \f1\'f0\f2\lang1066\u7883?\f0\lang1033 nh c\'e1c tham s\f2\lang1066\u7889?\f0\lang1033  n\'e0y l\'e0 b\f2\lang1066\u7855?\f0\lang1033 t bu\f2\lang1066\u7897?\f0\lang1033 c, khi g\f2\lang1066\u7885?\f0\lang1033 i \tab h\'e0m n\'e0y th\'ec y\'eau c\f2\lang1066\u7847?\f0\lang1033 u ph\f2\lang1066\u7843?\f0\lang1033 i truy\f2\lang1066\u7873?\f0\lang1033 n \f1\'f0\f2\lang1066\u7911?\f0\lang1033  c\'e1c tham s\f2\lang1066\u7889?\f0\lang1033  v\'e0o cho h\'e0m, n\f2\lang1066\u7871?\f0\lang1033 u truy\f2\lang1066\u7873?\f0\lang1033 n thi\f2\lang1066\u7871?\f0\lang1033 u ho\f2\lang1066\u7863?\f0\lang1033 c sai \tab c\'e1c tham s\f2\lang1066\u7889?\f0\lang1033   th\'ec ch\f1\u432?\u417?\f0 ng tr\'ecnh s\f2\lang1066\u7869?\f0\lang1033  n\'e9m l\f2\lang1066\u7895?\f0\lang1033 i.\par
+\tab\b\fs30 H\'e0m v\f2\lang1066\u7899?i tham s\u7889? \f0\lang1033 m\f2\lang1066\u7863?\f0\lang1033 c \f1\'f0\f2\lang1066\u7883?\f0\lang1033 nh\f2\lang1066  \par
+\f0\fs22\lang1033\tab\b0 Khi \f1\'f0\f2\lang1066\u7883?\f0\lang1033 nh ngh\f1\u297?\f0 a m\f2\lang1066\u7897?\f0\lang1033 t h\'e0m ta c\'f3 c\'e1c tham s\f2\lang1066\u7889?\f0\lang1033 , c\'e1c tham s\f2\lang1066\u7889?\f0\lang1033  n\'e0y c\'f3 th\f2\lang1066\u7875?\f0\lang1033  l\'e0 tham s\f2\lang1066\u7889?\f0\lang1033  b\f2\lang1066\u7855?\f0\lang1033 t bu\f2\lang1066\u7897?\f0\lang1033 c v\'e0 \tab tham s\f2\lang1066\u7889?\f0\lang1033  c\'f3 gi\'e1 tr\f2\lang1066\u7883?\f0\lang1033  m\f2\lang1066\u7863?\f0\lang1033 c \f1\'f0\f2\lang1066\u7883?\f0\lang1033 nh, c\'e1c tham s\f2\lang1066\u7889?\f0\lang1033  m\f2\lang1066\u7863?\f0\lang1033 c \f1\'f0\f2\lang1066\u7883?\f0\lang1033 nh m\'ecnh s\f2\lang1066\u7869?\f0\lang1033  truy\f2\lang1066\u7873?\f0\lang1033 n g\'e1i tr\f2\lang1066\u7883?\f0\lang1033  v\'e0o cho n\'f3. Khi \tab g\f2\lang1066\u7885?\f0\lang1033 i h\'e0m n\'e0y, y\'eau c\f2\lang1066\u7847?\f0\lang1033 u \f1\'f0\f2\lang1066\u7889?\f0\lang1033 i v\f2\lang1066\u7899?\f0\lang1033 i nh\f2\lang1066\u7919?\f0\lang1033 ng tham s\f2\lang1066\u7889?\f0\lang1033  b\f2\lang1066\u7855?\f0\lang1033 t bu\f2\lang1066\u7897?\f0\lang1033 c y\'eau c\f2\lang1066\u7847?\f0\lang1033 u ph\f2\lang1066\u7843?\f0\lang1033 i truy\f2\lang1066\u7873?\f0\lang1033 n gi\'e1 tr\f2\lang1066\u7883?\f0\lang1033 , c\'f2n \f1\'f0\f2\lang1066\u7889?\f0\lang1033 i \tab v\f2\lang1066\u7899?\f0\lang1033 i nh\f2\lang1066\u7919?\f0\lang1033 ng tham s\f2\lang1066\u7889?\f0\lang1033  m\f2\lang1066\u7863?\f0\lang1033 c \f1\'f0\f2\lang1066\u7883?\f0\lang1033 nh ta c\'f3 th\f2\lang1066\u7875?\f0\lang1033  truy\f2\lang1066\u7873?\f0\lang1033 n gi\'e1 tr\f2\lang1066\u7883?\f0\lang1033  kh\'e1c hay c\'f3 th\f2\lang1066\u7875?\f0\lang1033  kh\'f4ng. \f1\'d0\f2\lang1066\u7889?\f0\lang1033 i v\f2\lang1066\u7899?\f0\lang1033 i \tab tr\f1\u432?\f2\lang1066\u7901?\f0\lang1033 ng h\f2\lang1066\u7907?\f0\lang1033 p kh\'f4ng truy\f2\lang1066\u7873?\f0\lang1033 n gi\'e1 tr\f2\lang1066\u7883?\f0\lang1033  th\'ec n\'f3 s\f2\lang1066\u7869?\f0\lang1033  l\'e1y gi\'e1 tr\f2\lang1066\u7883?\f0\lang1033  ban \f1\'f0\f2\lang1066\u7847?\f0\lang1033 u, n\f2\lang1066\u7871?\f0\lang1033 u truy\f2\lang1066\u7873?\f0\lang1033 n g\'e1i tr\f2\lang1066\u7883?\f0\lang1033  th\'ec n\'f3 s\f2\lang1066\u7869?\f0\lang1033  l\'e1y \tab gi\'e1 tr\f2\lang1066\u7883?\f0\lang1033  b\f2\lang1066\u7841?\f0\lang1033 n truy\f2\lang1066\u7873?\f0\lang1033 n v\'e0o. \par
+\tab\b\fs30 H\'e0m v\f2\lang1066\u7899?i tham s\u7889? \f1\lang1033\'f0\f2\lang1066\u7897?\f0\lang1033  d\'e0i thay \f1\'f0\f2\lang1066\u7889?\f0\lang1033 i\par
+\tab\b0\fs22 Khi \f1\'f0\f2\lang1066\u7883?\f0\lang1033 nh ngh\f1\u297?\f0 a m\f2\lang1066\u7897?\f0\lang1033 t h\'e0m ta c\'f3 c\'e1c tham s\f2\lang1066\u7889?\f0\lang1033 , Tham s\f2\lang1066\u7889? v\u7899?i \f1\'f0\f2\u7897? d\f0\lang1033\'e0i thay \f1\'f0\f2\lang1066\u7893?i ( Variable-length \f0\lang1033\tab\f2\lang1066 Parameter) l\f0\lang1033\'e0 m\f2\lang1066\u7897?t tham s\u7889? \f1\'f0\f2\u7863?c bi\u7879?t\f0\lang1033 , n\'f3 ph\f2\lang1066\u7843?\f0\lang1033 i lu\'f4n \f1\'f0\f2\lang1066\u7913?\f0\lang1033 ng cu\f2\lang1066\u7889?\f0\lang1033 i h\'e0m. \f1\'f0\f2\lang1066\u7889?\f0\lang1033 i v\f2\lang1066\u7899?\f0\lang1033 i tham s\f2\lang1066\u7889?\f0\lang1033  n\'e0y ta \tab c\'f3 th\f2\lang1066\u7875?\f0\lang1033  truy\f2\lang1066\u7873?\f0\lang1033 n bao nhi\'eau gi\'e1 tr\f2\lang1066\u7883?\f0\lang1033  t\'f9y th\'edch.\par
+\par
+\par
+\b\fs30\par
+\tab\b0\fs22\par
+\b\f2\fs30\lang1066\par
+\f0\lang1033\tab\f2\lang1066\par
+\f0\lang1033\tab\f2\lang1066\par
+\f0\fs22\lang1033\par
+\tab\par
+\tab   \f2\fs30\lang1066\par
+\par
+\f0\lang1033\tab\lang9\par
+\tab\b0\fs22\par
+\f3\par
+}
+ 
