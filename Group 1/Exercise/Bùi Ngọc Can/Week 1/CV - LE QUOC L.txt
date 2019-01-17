@@ -1,0 +1,8 @@
+LE QUOC L
+gender: female
+education: Sai Gon University
+birthday: 1995-04-02
+address: 36 An Duong Vuong, An Nhon, Binh Dinh
+phone: 0864347703
+skill:  C#(4 year),  C++(10 year),  PHP(7 year), 
+hobbies:  music,  dance, 

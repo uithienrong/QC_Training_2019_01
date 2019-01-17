@@ -1,0 +1,8 @@
+DO TRAN C
+gender: female
+education: Da Lat University
+birthday: 1999-04-09
+address: 24 Quang Trung, An Lao, Binh Dinh
+phone: 0934067368
+skill:  C++(6 year),  C#(2 year),  Java(2 year), 
+hobbies:  climbing,  dance, 

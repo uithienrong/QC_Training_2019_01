@@ -1,0 +1,8 @@
+VO THIEN N
+gender: male
+education: Hai Phong University
+birthday: 1997-04-16
+address: 46 Hai Ba Trung, An Nhon, Binh Dinh
+phone: 0650955131
+skill:  PHP(10 year), 
+hobbies:  dance,  music, 

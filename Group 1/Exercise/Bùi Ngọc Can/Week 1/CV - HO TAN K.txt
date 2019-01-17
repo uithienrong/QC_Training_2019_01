@@ -1,0 +1,8 @@
+HO TAN K
+gender: female
+education: Ha Noi University
+birthday: 1999-06-20
+address: 56 Trung Vuong, Tuy Phuoc, Binh Dinh
+phone: 0180286337
+skill:  PHP(4 year),  Java(3 year),  Python(5 year), 
+hobbies:  climbing,  dance, 
