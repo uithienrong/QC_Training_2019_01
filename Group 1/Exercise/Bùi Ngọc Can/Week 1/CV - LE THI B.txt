@@ -1,8 +1,0 @@
-LE THI B
-gender: female
-education: Hai Phong University
-birthday: 1995-06-07
-address: 39 An Duong Vuong, Tuy Phuoc, Binh Dinh
-phone: 0484094642
-skill:  C++(6 year), 
-hobbies:  dance, 

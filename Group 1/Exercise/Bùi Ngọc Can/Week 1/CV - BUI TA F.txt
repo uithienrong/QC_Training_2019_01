@@ -1,8 +1,0 @@
-BUI TA F
-gender: male
-education: Da Nang University
-birthday: 1995-09-12
-address: 86 Quang Trung, Phu Cat, Binh Dinh
-phone: 0949588127
-skill:  Java(5 year),  C#(10 year), 
-hobbies:  climbing,  badminton,  football, 

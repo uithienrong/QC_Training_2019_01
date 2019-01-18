@@ -1,8 +1,0 @@
-NGUYEN VAN A
-gender: female
-education: Sai Gon University
-birthday: 1995-08-07
-address: 41 Trung Vuong, Tuy Phuoc, Binh Dinh
-phone: 0385336709
-skill:  PHP(3 year),  Python(4 year),  C#(3 year), 
-hobbies:  climbing,  gym,  dance, 

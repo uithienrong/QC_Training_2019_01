@@ -1,8 +1,0 @@
-NGUYEN TUAN H
-gender: male
-education: Ha Noi University
-birthday: 1996-11-06
-address: 73 Trung Vuong, Tuy Phuoc, Binh Dinh
-phone: 0946142089
-skill:  C#(4 year), 
-hobbies:  badminton, 

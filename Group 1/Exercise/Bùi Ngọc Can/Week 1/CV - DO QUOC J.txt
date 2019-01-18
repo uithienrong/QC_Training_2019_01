@@ -1,8 +1,0 @@
-DO QUOC J
-gender: female
-education: Can Tho University
-birthday: 1998-07-19
-address: 22 Hai Ba Trung, Tay Son, Binh Dinh
-phone: 0285309873
-skill:  C++(8 year),  PHP(4 year), 
-hobbies:  gym,  climbing,  motor, 

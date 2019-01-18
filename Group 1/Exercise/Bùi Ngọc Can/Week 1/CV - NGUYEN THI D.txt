@@ -1,8 +1,0 @@
-NGUYEN THI D
-gender: male
-education: Thai Nguyen University
-birthday: 1994-07-15
-address: 91 Hoang Hoa Tham, Tuy Phuoc, Binh Dinh
-phone: 0138880872
-skill:  C++(6 year),  Python(5 year),  C#(7 year), 
-hobbies:  football, 
