@@ -2,7 +2,6 @@
 import datetime
 import random
 
-
 name=['NGO THE HUAN','LAM DUAN NHI','LY DONG HAI','BAC CAN NGON','CHAU SUNG QUAN','LA TAN','BUI CHAU HUYEN','DIEM LINH CO','HOANG MY ANH', 'KIM THAI NGHIEN','TRINH TU NGHIEN','SUHO','TU CHAU HIEN','JACKSON']
 gender=['male', 'female']
 education=['UIT','VHU','QNU','NEU','TDTU','HNUE','RMIT','UL','QSY','HUTECH']
@@ -10,7 +9,6 @@ street=['Tran Phu','Nguyen Tat Thanh','An Duong Vuong','Nguyen Thai Hoc','Tran V
 district=['An Nhon','Qui Nhon','Tuy Phuoc','Tay Son','An Lao','Phu Cat']
 skill=['C','Java','Ruby','Swift','Python','C#','PHP','C++']
 hobbies=['music','badminton','chess','dance','football','volleyball','tenis']
-
 
 class Person:
 	def __init__(self, name, gender, education, birthday, address, phone, skill, hobbies):
@@ -43,12 +41,12 @@ def getDate():
 	else:
 		dates=random.randint(1,28) 
 
-	return str(dates)+'-'+str(month)+'-'+str(year)
+	return str(dates)+'/'+str(month)+'/'+str(year)
 
 
 def getAddress():
 	getaddress=[]
-	randomaddress=str(random.randint(1,999)) +' '+ random.choice(street) +', '+ random.choice(district)+ ', Binh Dinh.'
+	randomaddress=str(random.randint(1,999)) +' '+ random.choice(street) +', '+ random.choice(district)+ ', Binh Dinh'
 	getaddress.append(randomaddress)
 	return getaddress
 
@@ -82,27 +80,19 @@ def main():
 	for i in username:
 		person=Person(i,getGender(),getEducation(),getDate(),getAddress(),getPhone(), getSkill(), getHobbies())
 
-		saddress=''
-		for j in person.address:
-			saddress=saddress+j
+		saddress=', '.join(person.address) 
 
-		sphone=''
-		for j in person.phone:
-			sphone=sphone+j
+		sphone=', '.join(person.phone) 
 
-		sskill=''
-		for j in person.skill:
-			sskill=sskill+j+', '
+		sskill=', '.join(person.skill) 
 
-		shobbies=''
-		for j in person.hobbies:
-			shobbies=shobbies+j+', '
+		shobbies=', '.join(person.hobbies)
 
 		file=open('CV-'+i+'.txt', 'w')
 		file.write(i+'\n')
 		file.write('gender: '+getGender()+'\n')
 		file.write('education: '+getEducation()+'\n')
-		file.write('birthday: '+str(getDate())+'\n')
+		file.write('birthday: '+getDate()+'\n')
 		file.write('address: '+saddress+'\n')
 		file.write('phone: '+sphone+'\n')
 		file.write('skill: '+sskill+'\n')
