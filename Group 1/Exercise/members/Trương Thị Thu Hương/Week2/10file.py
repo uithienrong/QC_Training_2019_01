@@ -16,7 +16,6 @@ def __init__(self, name, gender,education,birthday,address,phone,skill,hobbies):
 fi= ['NGUYEN VAN A','NGUYEN VAN B','NGUYEN VAN C','NGUYEN VAN D','NGUYEN VAN E','NGUYEN VAN F','NGUYEN VAN G','LE VAN A','LE VAN B','LE VAN C']
 for f in fi:
   fo = open(f, 'w')
-  #KHỞI TẠO VIẾT THÔNG TIN VÀO CÁC FILE
   fo.write('%s' %f)
   gender = ['male','female']
   for w in random.sample(gender,1):
@@ -42,7 +41,7 @@ for f in fi:
   fo.write (',%s' %d)
   fo.write (",Binh Dinh")
   p=random.randint(1000000000,9999999999)
-  fo.write('\nBirthday:%s'%p)
+  fo.write('\nPhone:%s'%p)
   # phone=[0,1,2,3,4,5,6,7,8,9]
   # phoneget=[]
   # pg=random.sample(phone,7)
