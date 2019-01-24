@@ -57,11 +57,8 @@ def gethobbies():
 	return hobbiesget
 
 def getbirthday():
-    year=[]
-    month=[]
-    day=[]
     birthday=[]
-    year=random.randint(1995,2000)
+    year=random.randint(1992,1998)
     month=random.randint(1,12)
     if month in [1,3,5,7,8,10,12]:
     	day=random.randint(1,31)
@@ -76,7 +73,7 @@ def getbirthday():
     birthday.append(year)
     return birthday
 
-def getAddress():
+def getaddress():
 	getaddress=[]
 	randomaddress=str(random.randint(1,999)) +' '+ random.choice(street) +', '+ random.choice(district)+ ', Binh Dinh'
 	getaddress.append(randomaddress)
@@ -86,17 +83,22 @@ def printPerson():
 	username=getname()
 
 	for i in username:
-		person=Person(i,getgender(),geteducation(),getbirthday(),getAddress(),getphone(), getskill(), gethobbies())
+		person=Person(i,getgender(),geteducation(),getbirthday(),getaddress(),getphone(), getskill(), gethobbies())
 
-		chuoiphone=''
+		phone=''
 		for j in person.phone:
-			chuoiphone=chuoiphone+str(j)
-		f=open('CV-{}.txt'.format(i.upper()), 'w')
+			phone=phone+str(j)
+		birthday=''
+		for j in person.birthday:
+			birthday=birthday+str(j)
+
+		f=open('CV-{}.txt.txt', 'w')
 		f.write('Name: {}\n'.format(''.join(person.name)))
 		f.write('gender: {}\n'.format(','.join(person.gender)))
 		f.write('education: {}\n'.format(','.join(person.education)))
+		f.write('birthday: {}\n'.format(''.join(birthday)))
 		f.write('address: {}\n'.format(','.join(person.address)))
-		f.write('phone: {}\n'.format(''.join(chuoiphone)))
+		f.write('phone: {}\n'.format(''.join(phone)))
 		f.write('skill: {}\n'.format(','.join(person.skill)))
 		f.write('hobbies: {}\n'.format(','.join(person.hobbies)))
 printPerson()
