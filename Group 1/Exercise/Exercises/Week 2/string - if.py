@@ -5,17 +5,24 @@
 # 	  cakes(23) returns 'Number of cakes: many'
 def cakes(count):
   # +++code here+++
-  return
+  if (count >=10):
+    return('Number of cakes: many')
+  else:
+    return('Number of cakes: %s'%count)
+  
 
 
 # B. first_ends
 # cho 1 chuoi string s, tra ve 1 chuoi voi 2 ky tu dau cua s va 2 ky tu cuoi cua s
 # ex: s = 'spring' cat duoc chuoi 'spng'. Neu length cua chuoi tra ve < 2 thi chuoi tra ve la trong
-def first_ends(s):
-  # +++code here+++
-  return
 
-# test() function
+# test() functiondef first_ends(s):
+  # +++code here+++
+  if len(s)<2:
+    return''
+  else:
+    return s[0:2]+s[-2:]
+
 def test(result, expected):
   if result == expected:
     output = ' OK '
