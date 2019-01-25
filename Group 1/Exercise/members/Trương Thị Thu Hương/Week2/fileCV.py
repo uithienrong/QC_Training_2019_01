@@ -70,21 +70,19 @@ def getskill():
 	return getskill
 def main():
 	name1=random.sample(name,10)
-
 	for i in name1:
-		nhanvien=NhanVien(i,getgender(),geteducation(),getaddress(),getphone(), getskill(), gethobbies(), getday(), getmonth(),getyear())
-
+		name1=NhanVien(i,getgender(),geteducation(),getaddress(),getphone(), getskill(), gethobbies(), getday(), getmonth(),getyear())
 		file=open(i+'.txt', 'w')
 		file.write('%s\n'%i)
 		file.write('gender: %s\n'%getgender())
 		file.write('education:%s \n'%geteducation())
-		file.write('Birthay:%s'%getday())
-		file.write('-%s'%getmonth())
-		file.write('-%s\n'%getyear())
-		file.write('address: %s'%getaddress()+',Binh Dinh \n')
-		file.write('phone: %s\n'%getphone())
-		file.write('skill:%s\n'%getskill())
-		file.write('hobbies:%s\n'%gethobbies())
+		file.write('Birthay:%s'% (', '.join(name1.day)))
+		file.write('-%s'%(', '.join(name1.month)))
+		file.write('-%s\n'%(', '.join(name1.year)))
+		file.write('address: %s'%(', '.join(name1.address) )+',Binh Dinh \n')
+		file.write('phone: %s\n'%(', '.join(name1.phone) ))
+		file.write('skill:%s\n'%(', '.join(name1.skill)))
+		file.write('hobbies:%s\n'%(', '.join(name1.hobbies)))
 		file.close();
 
 main()
