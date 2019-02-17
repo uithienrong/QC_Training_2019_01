@@ -5,24 +5,23 @@
 # 	  cakes(23) returns 'Number of cakes: many'
 def cakes(count):
   # +++code here+++
-  if (count >=10):
-    return('Number of cakes: many')
+  if count < 10:
+    str_return = 'Number of cakes: %s' % (count)
   else:
-    return('Number of cakes: %s'%count)
-  
+    str_return = 'Number of cakes: many'
+  return str_return
 
-
-# B. first_ends
-# cho 1 chuoi string s, tra ve 1 chuoi voi 2 ky tu dau cua s va 2 ky tu cuoi cua s
-# ex: s = 'spring' cat duoc chuoi 'spng'. Neu length cua chuoi tra ve < 2 thi chuoi tra ve la trong
-
-# test() functiondef first_ends(s):
+#B. first_ends
+#cho 1 chuoi string s, tra ve 1 chuoi voi 2 ky tu dau cua s va 2 ky tu cuoi cua s
+#ex: s = 'spring' cat duoc chuoi 'spng'. Neu length cua chuoi tra ve < 2 thi chuoi tra ve la trong
+def first_ends(s):
   # +++code here+++
-  if len(s)<2:
-    return''
-  else:
-    return s[0:2]+s[-2:]
+  s_return = s[:2]+s[-2:]
+  if(len(s_return) <= 2):
+    s_return=''
+  return s_return
 
+# test() function
 def test(result, expected):
   if result == expected:
     output = ' OK '

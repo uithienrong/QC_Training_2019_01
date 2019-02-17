@@ -4,23 +4,21 @@
 # ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
 import re
 def front_x(words):
-	# +++code here+++
-	listx=[]
-	listnotx=[]
-	for i in words:
-		if re.match("x",i):
-			listx.append(i)
-		else:
-			listnotx.append(i)
-		listx.sort()
-		listnotx.sort()
-	return listx+listnotx
-
+    front_x = []
+    notfront_x = []
+    str = "front_x"
+    for i in words:
+      if re.match('x', i):
+          front_x.append(i)
+      else:
+          notfront_x.append(i)
+      front_x.sort()
+      notfront_x.sort()
+    return front_x+notfront_x      
 
 
 # test() function
 def test(result, expected):
-	# +++code here+++
   if result == expected:
     output = ' OK '
   else:

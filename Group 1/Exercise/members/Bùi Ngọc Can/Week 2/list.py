@@ -1,26 +1,23 @@
+import re
 # Given a list of strings, return a list with the strings
 # in sorted order, except group all the strings that begin with 'x' first.
 # e.g. ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields
 # ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
-import re
 def front_x(words):
-	# +++code here+++
-	listx=[]
-	listnotx=[]
-	for i in words:
-		if re.match("x",i):
-			listx.append(i)
-		else:
-			listnotx.append(i)
-		listx.sort()
-		listnotx.sort()
-	return listx+listnotx
-
-
+  # +++code here+++
+  beginWithX = []
+  notBeginWithX = []
+  for i in words:
+    if re.match('x', i):
+      beginWithX.append(i)
+    else:
+      notBeginWithX.append(i)
+    beginWithX.sort()
+    notBeginWithX.sort()
+  return beginWithX+notBeginWithX
 
 # test() function
 def test(result, expected):
-	# +++code here+++
   if result == expected:
     output = ' OK '
   else:

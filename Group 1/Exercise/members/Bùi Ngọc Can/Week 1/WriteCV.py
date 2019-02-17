@@ -58,36 +58,47 @@ def getHobbies():
 #lay ngau nhien 10 ten t list names cho truoc o tren
 usingname=random.sample(names,10)
 
-#vong for ghi file
-for i in usingname:
-
+#ham ghi file
+def writeFile():
+	for i in usingname:
 	#khoi tao Ungvien
-	ungvien=Ungvien(i, 
-		random.choice(gender), #lay ngau nhieu gioi tinh male hoac female
-	 	random.choice(education), # lay ngau nhien education tu list education o tren
-	  	getDate(), # goi ham getDate() de lay ngay sinh ngau nhien
-		'{} {}, {}, {}'.format(random.randint(1,100), random.choice(street), random.choice(district), 'Binh Dinh'), #lay ngau nhien so nha tu 1-100,
-		 #ten duong, quan huyen ngau nhien tu list cho truoc, tinh de mac dinh la Binh Dinh
-		'0{}'.format(random.randint(100000000,999999999)), #lay ngau nhien 9 so sau cua so dien thoai tu 100000000-999999999
-		getSkill(), getHobbies()) 
-	
-	chuoiskill=''
-	for j in ungvien.skill:
-		chuoiskill=chuoiskill+' {}, '.format(j) # tao chuoi cac skill de in ra
+		ungvien=Ungvien(i, 
+			random.choice(gender), #lay ngau nhieu gioi tinh male hoac female
+		 	random.choice(education), # lay ngau nhien education tu list education o tren
+		  	getDate(), # goi ham getDate() de lay ngay sinh ngau nhien
+			'{} {}, {}, {}'.format(random.randint(1,100), random.choice(street), random.choice(district), 'Binh Dinh'), #lay ngau nhien so nha tu 1-100,
+			 #ten duong, quan huyen ngau nhien tu list cho truoc, tinh de mac dinh la Binh Dinh
+			'0{}'.format(random.randint(100000000,999999999)), #lay ngau nhien 9 so sau cua so dien thoai tu 100000000-999999999
+			getSkill(), getHobbies()) 
+		
+		chuoiskill=''
+		for j in ungvien.skill:
+			chuoiskill=chuoiskill+' {},'.format(j) # tao chuoi cac skill de in ra
+		chuoiskill = chuoiskill.rstrip(',')
 
-	chuoihobbies=''
-	for j in ungvien.hobbies:
-		chuoihobbies=chuoihobbies+' {}, '.format(j, random.randint(1,10)) # tao chuoi cac hobbies de in ra
+		chuoihobbies=''
+		for j in ungvien.hobbies:
+			chuoihobbies=chuoihobbies+' {},'.format(j, random.randint(1,10)) # tao chuoi cac hobbies de in ra
+		chuoihobbies = chuoihobbies.rstrip(',')
 
-	fobj=open('CV - {}.txt'.format(i.upper()), 'w')
-	fobj.write('{}\n'.format(i.upper()))
-	fobj.write('gender: {}\n'.format(ungvien.gender))
-	fobj.write('education: {}\n'.format(ungvien.education))
-	fobj.write('birthday: {}\n'.format(ungvien.birthday))
-	fobj.write('address: {}\n'.format(ungvien.address))
-	fobj.write('phone: {}\n'.format(ungvien.phone))
-	fobj.write('skill: {}\n'.format(chuoiskill))
-	fobj.write('hobbies: {}\n'.format(chuoihobbies))
+		fobj=open('CV - {}.txt'.format(i.upper()), 'w')
+		fobj.write('{}\n'.format(i.upper()))
+		fobj.write('gender: {}\n'.format(ungvien.gender))
+		fobj.write('education: {}\n'.format(ungvien.education))
+		fobj.write('birthday: {}\n'.format(ungvien.birthday))
+		fobj.write('address: {}\n'.format(ungvien.address))
+		fobj.write('phone: {}\n'.format(ungvien.phone))
+		fobj.write('skill: {}\n'.format(chuoiskill))
+		fobj.write('hobbies: {}\n'.format(chuoihobbies))
+
+#ham main
+def main():
+	writeFile()
+
+#goi ham main
+main()
+
+
 	
 
 

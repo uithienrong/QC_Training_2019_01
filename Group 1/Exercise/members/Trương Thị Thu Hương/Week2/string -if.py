@@ -3,26 +3,24 @@
 # Neu count >= 10 thi thay <count> thanh many
 # Ex: cakes(5) returns 'Number of cakes: 5'
 # 	  cakes(23) returns 'Number of cakes: many'
+import re
 def cakes(count):
   # +++code here+++
-  if (count >=10):
-    return('Number of cakes: many')
-  else:
-    return('Number of cakes: %s'%count)
-  
-
-
+	if (count<10):
+		return 'Number of cakes: %s'%count
+	else:
+		return 'Number of cakes: many'
 # B. first_ends
 # cho 1 chuoi string s, tra ve 1 chuoi voi 2 ky tu dau cua s va 2 ky tu cuoi cua s
 # ex: s = 'spring' cat duoc chuoi 'spng'. Neu length cua chuoi tra ve < 2 thi chuoi tra ve la trong
-
-# test() functiondef first_ends(s):
+def first_ends(s):
   # +++code here+++
   if len(s)<2:
-    return''
+  	return ""
   else:
-    return s[0:2]+s[-2:]
+  	return s[0:2]+s[-2:]
 
+# test() function
 def test(result, expected):
   if result == expected:
     output = ' OK '
@@ -51,3 +49,4 @@ def main():
 
 # Call the main() function.
 main()
+

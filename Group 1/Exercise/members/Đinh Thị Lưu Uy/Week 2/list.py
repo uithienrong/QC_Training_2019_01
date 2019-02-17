@@ -4,7 +4,6 @@
 # ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
 import re
 def front_x(words):
-	# +++code here+++
 	listx=[]
 	listnotx=[]
 	for i in words:
@@ -20,7 +19,6 @@ def front_x(words):
 
 # test() function
 def test(result, expected):
-	# +++code here+++
   if result == expected:
     output = ' OK '
   else:
